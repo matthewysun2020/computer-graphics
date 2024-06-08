@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/cs184/p3-1-pathtracer-sp23-184dw3/out/build/x64-Release/CMakeFiles/pathtracer.dir/embed.manifest"

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "pathtracer.exe",
+      "name": "pathtracer.exe",
+        "args": [ "-t 8 -s 1 -r 250 180 ../../../dae/simple/cube.dae" ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Levy Deng, Matthew Sun  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Assignment 3-2: Additional Features to PathTracer</h1>
+    <h2 align="middle">Levy Deng, Matthew Sun</h2>
+    <h2 align="middle"><a href="https://matthewsunsailing.github.io/proj-webpage/proj3-2/index.html">Website Link</a></h2>
+
+    <div class="padded">
+
+        
+        * NOTE: For this project, you will choose TWO out of the four given parts to complete. One of those parts must be Part 1 or Part 2. In other words, you can choose any combination of two parts except the pair (Part 3, Part 4).
+
+
+        <h3 align="middle">Part 1. Mirror and Glass Materials</h3>
+
+        <p><b>
+            Show a sequence of six images of scene `CBspheres.dae` rendered with `max_ray_depth` set to 0, 1, 2, 3, 4, 5, and 100. The other settings should be at least 64 samples per pixel and 4 samples per light. Make sure to include all screenshots.
+        </b></p>
+        <p>
+            The following images were rendered with 64 samples per pixel and 4 samples per light.
+            <div align="middle">
+                <table style="width:100%">
+                    <tbody>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p1/CBspheres_0.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 0</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p1/CBspheres_1.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 1</figcaption>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p1/CBspheres_2.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 2</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p1/CBspheres_3.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 3</figcaption>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p1/CBspheres_4.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 4</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p1/CBspheres_5.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 5</figcaption>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p1/CBspheres_100.png" align="middle" width="400px">
+                                <figcaption>Max ray depth 100</figcaption>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
+        <br>
+        <p><b>
+            Point out the new multibounce effects that appear in each image. 
+        </b></p>
+        <p>
+            Max ray depth 0 is an image of zero-bounce radiance, which is just the light source. Max ray depth 1 is an image with one-bounce radiance, which only shows the light bouncing off the spheres as a result of the reflect() function of each material, showing some distorted rectangle on the spheres due to the curvature. We also see the shadows for the spheres. Also, because the camera rays that bounce off the ceiling can never reach the light, the ceiling does not appear lit, just like in project 3-1 with direct lighting.
+            Max ray depth 2 shows no refraction, but indirect reflection from both of the spheres, showing blue, red, and white walls(because both the mirror sphere and the glass sphere have reflection properties). We can somewhat see this from the reflection on the mirror sphere as well as the very dark reflection on the glass material. The reason for having no refraction in the glass is because we need to have the light hit the walls (1 bounce), hit the sphere and refract (2 bounce), and then from inside the sphere refract outward (3 bounce). Since we only have 2 bounces available, we don't have refraction.
+            For max depth of 3, what we see is that we now have refraction, showing "see-through" properties of the glass sphere where the light bounces off the walls, refract into the sphere, and then refract out, this is one of the biggest differences between 3 bounce and 2 bounce. Instead of having a dark sphere for the glass sphere, we now have light coming for the environment passing through.
+            Max ray depths 4, 5, and 100 allow for progressively more and more light bounces, resulting in the image getting brighter. This is particularly noticable in the caustics, the round region of light that appears beneath the glass ball. Notice also the faint caustic that appears on the blue wall on the right.
+        </p>
+        <br>
+        <p><b>
+            Explain how these bounce numbers relate to the particular effects that appear. Make sure to include all screenshots.
+        </b></p>
+        <p>
+            While we included part of our explanation in the previous response for depth 2 and 3, we'll reiterate those explanations here:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    For max depth 0, we only having zero-bounce radiance, so all we can see is the radiance coming directly from the light, hence showing only the lightsource (as explained in proj1). Of course, no refraction  / reflection is possible here.
+                </li>
+                <li>
+                    For max depth 1, we now have 1-bounce radience. which means we can now see the walls (light bounce off the walls into the camera), just like direct lighting in project 3-1. Moreover, we see the reflection for light on the surface of the materials here, which is also like project 3-1, but instead of having the light diffuse on the spheres, these materials are specular, so we have a reflection of the light instead. However, we still don't see any environment reflection, because we do not have enough bounces for bouncing off the walls, and reflecting off the sphere (this requries 2 bounces).
+                </li>
+                <li>
+                    For max depth 2, we now have indirect bounces coming from the walls, so we start seeing that from our mirror material sphere, where the light from the walls are reflecting off the spheres. Similarly, we see the same for the glass material which has its reflection component working the same way, albeit very dark (since we using coinflip to see if the light reflect or refract). The reason that there is no refraction on the glass is because we need at least 2 refractions to see indirect light (refract into the sphere and then out of the sphere), and 1 extra bounce to for the light to come from the walls. This means that we won't see any refraction yet. Additionally, if we position the sphere between the light and the camera, then we can see the light passing through. However, as it is placed, we can only see the light refracting into the sphere and out towards the camera, which doesn't happen here, therefore we don't really see the refraction component.
+                </li>
+                <li>
+                    For max depth 3, we now have refraction. We see that most distinctly with the glass material, where light from the walls are now able to be refracted towards the camera. Light reflects from the walls, into the sphere, then out of the sphere into the camera.
+                </li>
+                <li>
+                    For max depth 4, a caustic appears that is the result of light reflecting off the mirror ball, refracting into the glass ball, refracting out of the glass ball onto the wall, then reflecting off of the wall and into the camera.
+                </li>
+                <li>
+                    For max depth 5, and 100, we see a trend where the shadows get softer (more indirect lights goes into the shadows), and that the images gets brighter (we have more radiance from indirect lights bouncing around).
+                </li>
+            </ul>
+        </p>
+        <br>
+
+
+        <h3 align="middle">Part 2. Microfacet Material</h3>
+        <p><b>
+            Show a screenshot sequence of 4 images of scene `CBdragon_microfacet_au.dae` rendered with $\alpha$ set to 0.005, 0.05, 0.25 and 0.5. The other settings should be at least 128 samples per pixel and 1 samples per light. The number of bounces should be at least 5. Describe the differences between different images. Note that, to change the $\alpha$, just open the .dae file and search for `microfacet`.
+        </b></p>
+        <p>
+            The following images were rendered with 256 samples per pixel, 4 samples per light, and a max ray depth of 7.
+            <div align="middle">
+                <table style="width:100%">
+                    <tbody>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p2/dragon005.png" align="middle" width="400px">
+                                <figcaption>alpha=0.005</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p2/dragon05.png" align="middle" width="400px">
+                                <figcaption>alpha=0.05</figcaption>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p2/dragon25.png" align="middle" width="400px">
+                                <figcaption>alpha=0.25</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p2/dragon5.png" align="middle" width="400px">
+                                <figcaption>alpha=0.5</figcaption>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
+        <br>
+        <p><b>
+            Show two images of scene `CBbunny_microfacet_cu.dae` rendered using cosine hemisphere sampling (default) and your importance sampling. The sampling rate should be fixed at 64 samples per pixel and 1 samples per light. The number of bounces should be at least 5. Briefly discuss their difference.
+        </b></p>
+        <p>
+            The following are two images rendered using each sampling technique.
+            <div align="middle">
+                <table style="width:100%">
+                    <tbody>
+                        <tr align="center">
+                            <td>
+                                <img src="images/p2/bunnyhemisphere.png" align="middle" width="400px">
+                                <figcaption>Cosine Hemisphere Sampling</figcaption>
+                            </td>
+                            <td>
+                                <img src="images/p2/bunnyimportance.png" align="middle" width="400px">
+                                <figcaption>Importance Sampling</figcaption>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            The primary difference between the two methods of sampling appear on the edges of the bunny; whereas hemisphere sampling has dark patches on the edges and front faces of the bunny, importance sampling mitigates this issue, resulting in the edges being properly illuminated.
+            Importance sampling converges much faster and with lower sample counts than cosine hemisphere sampling because it leverages information about how light should reflect off of these microfacets, thus giving smarter samples.
+            This is most noticable in areas on the bunny in which light rays or camera rays are near parallel to the surface, resulting in the chances that a camera ray intersecting these surfaces reaching a light source being nearly zero.
+        </p>
+        <p>
+            As an aside, the image using importance sampling is significantly less noisy than the image using cosine hemisphere sampling.
+        </p>
+        <br>
+        <p><b>
+            Show at least one image with some other conductor material, replacing `eta` and `k`. Note that you should look up values for real data rather than modifying them arbitrarily. Tell us what kind of material your parameters correspond to. 
+        </b></p>
+        <p>
+            The following image is rendered using the refractive properties of beryllium, a dark gray metal.<br><br>
+            <img src="images/p2/bunny.png" align="middle" width="400px">
+            <figcaption>Beryllium Bunny</figcaption>
+        </p>
+        <br>
+
+    </div>
+</body>
+</html>
+

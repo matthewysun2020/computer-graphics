@@ -1,0 +1,17 @@
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/pt31.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/pathtracer.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/install.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/CMakeFiles/CGL.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/CMakeFiles/install.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/CMakeFiles/ALL_BUILD.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/CMakeFiles/ZERO_CHECK.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glew/CMakeFiles/glew.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glew/CMakeFiles/install.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/CMakeFiles/uninstall.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/CMakeFiles/install.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/CMakeFiles/ALL_BUILD.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/CMakeFiles/ZERO_CHECK.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/src/CMakeFiles/glfw.dir
+/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CGL/deps/glfw/src/CMakeFiles/install.dir

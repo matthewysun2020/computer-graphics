@@ -1,0 +1,288 @@
+Performing C++ SOURCE FILE Test HAVE_AVX_EXTENSIONS failed with the following compile output:
+Change Dir: /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_ba320 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2023-03-08 20:53:01.593 xcodebuild[46105:3433343] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+2023-03-08 20:53:01.594 xcodebuild[46105:3433343] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_ba320 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 00c0a18f2861f2629aff4fab60a049ba
+Build description path: /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/XCBuildData/00c0a18f2861f2629aff4fab60a049ba-desc.xcbuild
+
+note: Build preparation complete
+note: Building targets in dependency order
+CreateBuildDirectory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build
+
+CreateBuildDirectory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/Debug
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/Debug
+
+CompileC /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/src.o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/src.cxx normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_ba320' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos12.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\=\"Debug\" -DHAVE_AVX_EXTENSIONS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/Debug/include -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/DerivedSources-normal/arm64 -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/DerivedSources/arm64 -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/DerivedSources -F/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/Debug -mavx -MMD -MT dependencies -MF /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/src.d --serialize-diagnostics /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/src.dia -c /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/src.cxx -o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/src.o
+clang: warning: argument unused during compilation: '-mavx' [-Wunused-command-line-argument]
+In file included from /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/src.cxx:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/immintrin.h:13:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/x86gprintrin.h:15:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/hresetintrin.h:42:27: error: invalid input constraint 'a' in asm
+  __asm__ ("hreset $0" :: "a"(__eax));
+                          ^
+In file included from /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/src.cxx:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/immintrin.h:17:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+    __builtin_ia32_emms();
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:5: note: '__builtin_isless' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:25: error: too few arguments to function call, expected 2, have 0
+    __builtin_ia32_emms();
+    ~~~~~~~~~~~~~~~~~~~~^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:50:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+    return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:67:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+    return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+           ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:129:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+    return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:159:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+    return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:189:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+    return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:216:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+    return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:239:19: error: use of undeclared identifier '__builtin_ia32_punpckhwd'
+    return (__m64)__builtin_ia32_punpckhwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:260:19: error: use of undeclared identifier '__builtin_ia32_punpckhdq'
+    return (__m64)__builtin_ia32_punpckhdq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:287:19: error: use of undeclared identifier '__builtin_ia32_punpcklbw'
+    return (__m64)__builtin_ia32_punpcklbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:310:19: error: use of undeclared identifier '__builtin_ia32_punpcklwd'
+    return (__m64)__builtin_ia32_punpcklwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:331:19: error: use of undeclared identifier '__builtin_ia32_punpckldq'
+    return (__m64)__builtin_ia32_punpckldq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: error: use of undeclared identifier '__builtin_ia32_paddb'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: error: first argument of MTE builtin function must be a pointer ('__v8qi' (vector of 8 'char' values) invalid)
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^                    ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:373:19: error: use of undeclared identifier '__builtin_ia32_paddw'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:373:19: error: first argument of MTE builtin function must be a pointer ('__v4hi' (vector of 4 'short' values) invalid)
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^                    ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:394:19: error: use of undeclared identifier '__builtin_ia32_paddd'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddd((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+WriteAuxiliaryFile /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/cmTC_ba320.LinkFileList (in target 'cmTC_ba320' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic
+    write-file /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/cmTC_ba320.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/build/cmTC_ba320.build/Debug/Objects-normal/arm64/src.o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-M6yJic/src.cxx normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_ba320' from project 'CMAKE_TRY_COMPILE')
+(1 failure)
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        #include <immintrin.h>
+        int main()
+        {
+          __m256 a, b, c;
+          const float src[8] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+          float dst[8];
+          a = _mm256_loadu_ps( src );
+          b = _mm256_loadu_ps( src );
+          c = _mm256_add_ps( a, b );
+          _mm256_storeu_ps( dst, c );
+
+          for( int i = 0; i < 8; i++ ){
+            if( ( src[i] + src[i] ) != dst[i] ){
+              return -1;
+            }
+          }
+
+          return 0;
+        }
+
+Performing C++ SOURCE FILE Test HAVE_AVX2_EXTENSIONS failed with the following compile output:
+Change Dir: /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_fde82 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2023-03-08 20:53:02.576 xcodebuild[46119:3433503] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+2023-03-08 20:53:02.576 xcodebuild[46119:3433503] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_fde82 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 1c0673049b08efc009115821c0d49b36
+Build description path: /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/XCBuildData/1c0673049b08efc009115821c0d49b36-desc.xcbuild
+
+note: Build preparation complete
+note: Building targets in dependency order
+CreateBuildDirectory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/Debug
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/Debug
+
+CreateBuildDirectory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build
+
+CompileC /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/src.o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/src.cxx normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_fde82' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos12.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\=\"Debug\" -DHAVE_AVX2_EXTENSIONS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/Debug/include -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/DerivedSources-normal/arm64 -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/DerivedSources/arm64 -I/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/DerivedSources -F/Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/Debug -mavx2 -MMD -MT dependencies -MF /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/src.d --serialize-diagnostics /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/src.dia -c /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/src.cxx -o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/src.o
+clang: warning: argument unused during compilation: '-mavx2' [-Wunused-command-line-argument]
+In file included from /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/src.cxx:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/immintrin.h:13:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/x86gprintrin.h:15:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/hresetintrin.h:42:27: error: invalid input constraint 'a' in asm
+  __asm__ ("hreset $0" :: "a"(__eax));
+                          ^
+In file included from /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/src.cxx:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/immintrin.h:17:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:5: error: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+    __builtin_ia32_emms();
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:5: note: '__builtin_isless' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:33:25: error: too few arguments to function call, expected 2, have 0
+    __builtin_ia32_emms();
+    ~~~~~~~~~~~~~~~~~~~~^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:50:19: error: use of undeclared identifier '__builtin_ia32_vec_init_v2si'
+    return (__m64)__builtin_ia32_vec_init_v2si(__i, 0);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:67:12: error: use of undeclared identifier '__builtin_ia32_vec_ext_v2si'
+    return __builtin_ia32_vec_ext_v2si((__v2si)__m, 0);
+           ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:129:19: error: use of undeclared identifier '__builtin_ia32_packsswb'
+    return (__m64)__builtin_ia32_packsswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:159:19: error: use of undeclared identifier '__builtin_ia32_packssdw'
+    return (__m64)__builtin_ia32_packssdw((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:189:19: error: use of undeclared identifier '__builtin_ia32_packuswb'
+    return (__m64)__builtin_ia32_packuswb((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:216:19: error: use of undeclared identifier '__builtin_ia32_punpckhbw'
+    return (__m64)__builtin_ia32_punpckhbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:239:19: error: use of undeclared identifier '__builtin_ia32_punpckhwd'
+    return (__m64)__builtin_ia32_punpckhwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:260:19: error: use of undeclared identifier '__builtin_ia32_punpckhdq'
+    return (__m64)__builtin_ia32_punpckhdq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:287:19: error: use of undeclared identifier '__builtin_ia32_punpcklbw'
+    return (__m64)__builtin_ia32_punpcklbw((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:310:19: error: use of undeclared identifier '__builtin_ia32_punpcklwd'
+    return (__m64)__builtin_ia32_punpcklwd((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:331:19: error: use of undeclared identifier '__builtin_ia32_punpckldq'
+    return (__m64)__builtin_ia32_punpckldq((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: error: use of undeclared identifier '__builtin_ia32_paddb'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: error: first argument of MTE builtin function must be a pointer ('__v8qi' (vector of 8 'char' values) invalid)
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^                    ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:373:19: error: use of undeclared identifier '__builtin_ia32_paddw'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:373:19: error: first argument of MTE builtin function must be a pointer ('__v4hi' (vector of 4 'short' values) invalid)
+    return (__m64)__builtin_ia32_paddw((__v4hi)__m1, (__v4hi)__m2);
+                  ^                    ~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:394:19: error: use of undeclared identifier '__builtin_ia32_paddd'; did you mean '__builtin_arm_addg'?
+    return (__m64)__builtin_ia32_paddd((__v2si)__m1, (__v2si)__m2);
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/mmintrin.h:352:19: note: '__builtin_arm_addg' declared here
+    return (__m64)__builtin_ia32_paddb((__v8qi)__m1, (__v8qi)__m2);
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+WriteAuxiliaryFile /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/cmTC_fde82.LinkFileList (in target 'cmTC_fde82' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D
+    write-file /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/cmTC_fde82.LinkFileList
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/build/cmTC_fde82.build/Debug/Objects-normal/arm64/src.o /Users/lwinston/CS184/p3-1-pathtracer-sp23-184dw3/xcode/CMakeFiles/CMakeScratch/TryCompile-d4jZ5D/src.cxx normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_fde82' from project 'CMAKE_TRY_COMPILE')
+(1 failure)
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        #include <immintrin.h>
+        int main()
+        {
+          __m256i a, b, c;
+          const int src[8] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+          int dst[8];
+          a =  _mm256_loadu_si256( (__m256i*)src );
+          b =  _mm256_loadu_si256( (__m256i*)src );
+          c = _mm256_add_epi32( a, b );
+          _mm256_storeu_si256( (__m256i*)dst, c );
+
+          for( int i = 0; i < 8; i++ ){
+            if( ( src[i] + src[i] ) != dst[i] ){
+              return -1;
+            }
+          }
+
+          return 0;
+        }
+

@@ -1,0 +1,3 @@
+D:/cs184/p4-clothsim-sp23-clothxyz/out/build/x64-Debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4cf2e.dir
+D:/cs184/p4-clothsim-sp23-clothxyz/out/build/x64-Debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
+D:/cs184/p4-clothsim-sp23-clothxyz/out/build/x64-Debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "draw.exe",
+      "name": "draw.exe",
+      "args": ["../../../svg/texmap/test4.svg"]
+    }
+  ]
+}
